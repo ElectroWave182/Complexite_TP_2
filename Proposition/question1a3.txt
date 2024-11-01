@@ -1,0 +1,41 @@
+1)
+
+nbDepl (n) = 2^n - 1
+
+
+2)
+
+Hauteur impaire : a -> c
+Hauteur paire : a -> b
+
+
+3)
+
+debut
+|	fonction hanoiRec (hauteur, depart, arrivee, passage)
+|	debut
+|	|
+|	|	si n == 1
+|	|	|	deplacer (depart, arrivee)
+|	|	|
+|	|	sinon
+|	|	|	hanoi (hauteur - 1, depart, passage, arrivee)
+|	|	|	deplacer (depart, arrivee)
+|	|	|	hanoi (hauteur - 1, passage, arrivee, depart)
+|	|	|
+|	|	fin si
+|	|
+|	fin
+|
+|
+|	fonction hanoi (hauteur)
+|	debut
+|	|	hanoiRec (hauteur, 0, 1, 2)
+|	|
+|	fin
+fin
+
+
+4)
+
+Voir le fichier py...
